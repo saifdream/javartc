@@ -29,13 +29,13 @@ var sdpConstraints = { OfferToReceiveAudio: true, OfferToReceiveVideo: true };
 var webSocket = new WebSocket("ws://" + location.hostname + ":" + location.port + "/chat/");
 
 var iceServers = { iceServers: [
-    { url:'stun:numb.viagenie.ca:3478', credential:'n15255161525516', username:'saif89.2012@gmail.com' },
+    { url:'stun:numb.viagenie.ca:3478', credential:'', username:'' },
     { url:'stun:stun.l.google.com:19302' },
     { url:'stun:stun2.1.google.com:19302' },
     { url:'stun:23.21.150.121' },
-    { url:'turn:numb.viagenie.ca:3478', credential:'n15255161525516', username:'saif89.2012@gmail.com' },
-    { url:'turn:192.158.29.39:3478?transport=udp', credential:'JZEOEt2V3Qb0y27GRntt2u2PAYA=', username:'28224511:1379330808' },
-    { url:'turn:192.158.29.39:3478?transport=tcp', credential:'JZEOEt2V3Qb0y27GRntt2u2PAYA=', username:'28224511:1379330808' }
+    { url:'turn:numb.viagenie.ca:3478', credential:'', username:'' },
+    { url:'turn:192.158.29.39:3478?transport=udp', credential:'', username:'' },
+    { url:'turn:192.158.29.39:3478?transport=tcp', credential:'', username:'' }
 ] };
 
 // DTLS/SRTP is preferred on chrome to interop with Firefox which supports them by default
