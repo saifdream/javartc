@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="WebRTC code samples">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side WebRTC code samples">
+    <meta itemprop="name" content="WebRTC code samples">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+
+    <title>Peer connection: states</title>
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/main2.css" />
+</head>
+<body>
+    <div id="container">
+        <video id="video1" autoplay></video>
+        <video id="video2" autoplay></video>
+
+        <div id="buttons">
+            <button id="startButton">Start</button>
+            <button id="callButton">Call</button>
+            <button id="hangupButton">Hang Up</button>
+        </div>
+
+        <div id="states">
+            <div>
+                <div class="label">PC1 state:</div><div id="pc1State" class="value"></div>
+            </div>
+            <div>
+                <div class="label">PC1 ICE state:</div><div id="pc1IceState" class="value"></div>
+            </div>
+            <div>
+                <div class="label">PC2 state:</div><div id="pc2State" class="value"></div>
+            </div>
+            <div>
+                <div class="label">PC2 ICE state:</div><div id="pc2IceState" class="value"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

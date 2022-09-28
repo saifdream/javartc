@@ -1,0 +1,26 @@
+body {
+    background: #eee;
+    padding: 5% 0;
+}
+video {
+    background: black;
+    border: 1px solid gray;
+}
+.call-page {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+#localVideo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#remoteVideo {
+    width: 500px;
+    height: 500px;
+}
